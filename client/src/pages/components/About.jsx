@@ -9,8 +9,7 @@ const About = () => {
               data-aos="fade-up-left"
               className="about_me_img"
               src={me}
-              alt="image"
-              srcSet
+              alt="me"
             />
           </div>
           <div data-aos="fade-right" className="flex_one right">
@@ -25,19 +24,23 @@ const About = () => {
               Backend.
             </p>
             <div className="social">
-              <a href>
+              <a
+                rel="noreferrer"
+                target="_blank"
+                href="https://github.com/faketi101"
+              >
                 <i className="fab fa-github" />
               </a>
-              <a href>
+              <a rel="noreferrer" target="_blank" href="github.com/faketi101">
                 <i className="fab fa-facebook-f" />
               </a>
-              <a href>
+              <a rel="noreferrer" target="_blank" href="github.com/faketi101">
                 <i className="fab fa-twitter" />
               </a>
-              <a href>
+              <a rel="noreferrer" target="_blank" href="github.com/faketi101">
                 <i className="fab fa-pinterest-p" />
               </a>
-              <a href>
+              <a rel="noreferrer" target="_blank" href="github.com/faketi101">
                 <i className="fab fa-instagram" />
               </a>
             </div>

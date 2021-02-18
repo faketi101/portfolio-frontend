@@ -214,7 +214,8 @@ section {
   padding: 5rem 2rem 3rem 2rem;
   position: relative;
   text-align: center;
-  transition: all 0.3s ease;
+  transition: all 0.3s ease-in-out !important;
+  border-radius: 5px;
 }
 .services .card_wrapper .card img {
   position: absolute;
@@ -238,6 +239,8 @@ section {
 }
 .services .card_wrapper .card:hover {
   background: var(--dark);
+  box-shadow: 1px 1px 5px var(--dark);
+  transform: scale(1.1) !important;
 }
 .services .card_wrapper .card:hover h2,
 .services .card_wrapper .card:hover p {

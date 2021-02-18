@@ -1,8 +1,13 @@
+// components
+import MoboleNav from "./Mobile_Nav";
+
+// images
 import me_one from "../../images/me-1.png";
 
 const Header = () => {
   return (
     <>
+      <MoboleNav />
       <header className="header">
         <div className="container">
           <nav id="main_nav" className="flex items_center justify_between">
@@ -28,7 +33,7 @@ const Header = () => {
               data-aos="fade-up-left"
               className="left flex_one flex justify_center"
             >
-              <img src={me_one} alt srcSet />
+              <img src={me_one} alt="me-2" />
             </div>
             <div className="right flex_one">
               <h6 data-aos="fade-right">Tarikul</h6>
