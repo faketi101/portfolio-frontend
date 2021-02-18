@@ -1,5 +1,5 @@
 // components
-import MoboleNav from "./Mobile_Nav";
+import MobileNav from "./Mobile_Nav";
 
 // images
 import me_one from "../../images/me-1.png";
@@ -7,7 +7,7 @@ import me_one from "../../images/me-1.png";
 const Header = () => {
   return (
     <>
-      <MoboleNav />
+      <MobileNav />
       <header className="header">
         <div className="container">
           <nav id="main_nav" className="flex items_center justify_between">

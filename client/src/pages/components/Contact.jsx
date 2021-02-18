@@ -13,7 +13,7 @@ const Contact = () => {
             <h6>coding.beast.404@gmail.com</h6>
           </div>
         </div>
-        <form data-aos="slide-right" action>
+        <form data-aos="slide-right">
           <div className="input_wrap">
             <input
               type="text"

@@ -1,20 +1,22 @@
+import DATA from "../../config/dataConfig"
+
 const Footer = () => {
   return (
     <footer className="footer">
       <div data-aos="slide-right" className="footer_social">
-        <a href>
+        <a href={DATA().social_links.github} target="_blank">
           <i className="fab fa-github" />
         </a>
-        <a href>
+        <a href={DATA().social_links.facebook} target="_blank">
           <i className="fab fa-facebook-f" />
         </a>
-        <a href>
+        <a href={DATA().social_links.twitter} target="_blank">
           <i className="fab fa-twitter" />
         </a>
-        <a href>
+        <a href={DATA().social_links.pinterest} target="_blank">
           <i className="fab fa-pinterest-p" />
         </a>
-        <a href>
+        <a href={DATA().social_links.instagram} target="_blank">
           <i className="fab fa-instagram" />
         </a>
       </div>

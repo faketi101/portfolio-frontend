@@ -1,4 +1,5 @@
 import me from "../../images/me.jpg";
+import DATA from "../../config/dataConfig"
 const About = () => {
   return (
     <>
@@ -27,20 +28,20 @@ const About = () => {
               <a
                 rel="noreferrer"
                 target="_blank"
-                href="https://github.com/faketi101"
+                href={DATA().social_links.github}
               >
                 <i className="fab fa-github" />
               </a>
-              <a rel="noreferrer" target="_blank" href="github.com/faketi101">
+              <a rel="noreferrer" target="_blank" href={DATA().social_links.facebook}>
                 <i className="fab fa-facebook-f" />
               </a>
-              <a rel="noreferrer" target="_blank" href="github.com/faketi101">
+              <a rel="noreferrer" target="_blank" href={DATA().social_links.twitter}>
                 <i className="fab fa-twitter" />
               </a>
-              <a rel="noreferrer" target="_blank" href="github.com/faketi101">
+              <a rel="noreferrer" target="_blank" href={DATA().social_links.pinterest}>
                 <i className="fab fa-pinterest-p" />
               </a>
-              <a rel="noreferrer" target="_blank" href="github.com/faketi101">
+              <a rel="noreferrer" target="_blank" href={DATA().social_links.instagram}>
                 <i className="fab fa-instagram" />
               </a>
             </div>
