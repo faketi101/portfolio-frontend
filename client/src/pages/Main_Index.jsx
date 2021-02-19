@@ -4,6 +4,7 @@ import Services from "./components/Services";
 import Freelancer from "./components/Freeelancer";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
+import Work from "./components/Work";
 
 const Main_Index = () => {
   return (
@@ -12,6 +13,7 @@ const Main_Index = () => {
       <About />
       <Services />
       <Freelancer />
+      <Work />
       <Contact />
       <Footer />
     </>

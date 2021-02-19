@@ -1,6 +1,23 @@
-import img_work_1 from "../../images/ph-1.png";
-import img_work_2 from "../../images/ph-1.png";
-import img_work_3 from "../../images/ph-1.png";
+import DATA from "../../config/dataConfig";
+import {Link} from "react-router-dom"
+const SingleCard = (props, index) => {
+  return (
+    <div
+      // onClick={(window.location.href = `/work/${props.link}`)}
+      data-aos={props.aos_data}
+      className="card"
+      key={`_work${index}`}
+    >
+     <Link to={props.link}>
+     <div className="overly">
+        <span>{props.type}</span>
+        <Link to={props.link}>{props.name}</Link>
+      </div>
+      <img src={`./images/${props.img}`} alt="work" />
+     </Link>
+    </div>
+  );
+};
 
 const Work = () => {
   return (
@@ -10,29 +27,7 @@ const Work = () => {
           <span>My </span>Works
         </h1>
         <p>Here is some projects and pages that I made for practises</p>
-        <div className="card_wrapper">
-          <div data-aos="fade-right" className="card">
-            <div className="overly">
-              <span>Caregory</span>
-              <a href>Web Development</a>
-            </div>
-            <img src={img_work_1} alt="work" />
-          </div>
-          <div data-aos="fade-left" className="card">
-            <div className="overly">
-              <span>Caregory</span>
-              <a href>Web Development</a>
-            </div>
-            <img src={img_work_2} alt="work" />
-          </div>
-          <div data-aos="fade-right" className="card">
-            <div className="overly">
-              <span>Caregory</span>
-              <a href>Web Development</a>
-            </div>
-            <img src={img_work_3} alt="work" />
-          </div>
-        </div>
+        <div className="card_wrapper">{DATA().work_data.map(SingleCard)}</div>
       </div>
     </section>
   );

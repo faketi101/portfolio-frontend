@@ -1,4 +1,3 @@
-
 const config = () => {
   let data_object = {
     social_links: {
@@ -44,7 +43,7 @@ const config = () => {
       {
         id: 5,
         name: "React JS",
-        img:"reactjs.jpg",
+        img: "reactjs.jpg",
         percent: "90%",
         background: "#87DAFE",
         aos_data: "fade-left",
@@ -56,6 +55,32 @@ const config = () => {
         percent: "95%",
         background: "#4D9444",
         aos_data: "fade-left",
+      },
+    ],
+    work_data: [
+      {
+        id: 1,
+        name: "School Attendance System",
+        type: "Web Development",
+        img: "ph-1",
+        aos_data: "fade-right",
+        link: "/work/attendance-system"
+      },
+      {
+        id: 2,
+        name: "Brigade Project",
+        type: "Web Development",
+        img: "ph-1",
+        aos_data: "fade-right",
+        link: "/work/brigate",
+      },
+      {
+        id: 3,
+        name: "Simple Browser Homepage",
+        type: "Web Development",
+        img: "ph-1",
+        aos_data: "fade-right",
+        link:"/work/browser-homepage-1"
       },
     ],
   };
