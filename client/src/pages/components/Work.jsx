@@ -24,7 +24,7 @@ const Work = () => {
     <section id="work" className="work">
       <div className="container">
         <h1 className="section_heading">
-          <span>My </span>Works
+          <span>My </span>Work
         </h1>
         <p>Here is some projects and pages that I made for practises</p>
         <div className="card_wrapper">{DATA().work_data.map(SingleCard)}</div>
