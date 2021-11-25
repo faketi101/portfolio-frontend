@@ -1,0 +1,2 @@
+(this.webpackJsonpclient=this.webpackJsonpclient||[]).push([[9],{71:function(e,c,t){"use strict";t.r(c);var i=t(1);c.default=function(){return Object(i.jsxs)("section",{id:"freelancer",className:"freelancer",children:[Object(i.jsx)("h1",{children:"I am Available for Development"}),Object(i.jsx)("p",{children:"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quibusdam, earum."}),Object(i.jsx)("a",{href:"#contact",className:"btn btn_primary",children:"Hire Me"})]})}}}]);
+//# sourceMappingURL=9.404f71ac.chunk.js.map

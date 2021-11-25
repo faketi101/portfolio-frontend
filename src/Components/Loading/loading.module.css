@@ -1,0 +1,83 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap");
+:root {
+  --laod_dark_1: #161616;
+  --laod_primary: #0d2323;
+  --load_secondary: #00fff9;
+  --load_pure: #fff;
+}
+
+.loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: var(--laod_dark_1);
+}
+.loading .text {
+  position: absolute;
+  color: var(--load_pure);
+  font-size: 25px;
+  font-family: "Poppins", sans-serif;
+}
+.container {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container .loader {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background: var(--laod_primary);
+  animation: loading 2s infinite;
+}
+@keyframes loading {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.container .loader::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(to top, transparent, rgba(0, 255, 249, 0.4));
+  background-size: 100px 180px;
+  background-repeat: no-repeat;
+  border-top-left-radius: 100px;
+  border-bottom-left-radius: 100px;
+}
+.container .loader::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 20px;
+  height: 20px;
+  background: var(--load_secondary);
+  border-radius: 50%;
+  z-index: 10;
+  box-shadow: 0 0 10px var(--load_secondary), 0 0 20px var(--load_secondary),
+    0 0 30px var(--load_secondary), 0 0 40px var(--load_secondary),
+    0 0 50px var(--load_secondary), 0 0 60px var(--load_secondary),
+    0 0 70px var(--load_secondary), 0 0 80px var(--load_secondary),
+    0 0 90px var(--load_secondary), 0 0 100px var(--load_secondary);
+}
+.container .loader span {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  right: 20px;
+  bottom: 20px;
+  background: var(--laod_dark_1);
+  border-radius: 50%;
+}
